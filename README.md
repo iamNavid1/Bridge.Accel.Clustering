@@ -52,6 +52,26 @@ Figure 8. Clustering using full average (above) versus clustering using 20% aver
 
 Then, in order to check the similarity of the samples clustered in a same category in both time and frequency domain, five samples of each categories were randomly selected. Figures 8-12 represent these samples in both time and frequency domains for all 5 categories, as well as the distance of these samples in frequency domain with respect to each other. </br>
 
+![Signlas of Cluster 1](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/signalsCluster1.png)</br>
+![Similarity of Signals of Cluster 1](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/dtw1.png)</br>
+Figure 8. Five samples of cluster number 1 in time and frequency domain and their DTW distances (similarity measure) to each other </br>
+
+![Signlas of Cluster 2](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/signalsCluster2.png)</br>
+![Similarity of Signals of Cluster 2](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/dtw2.png)</br>
+Figure 9. Five samples of cluster number 2 in time and frequency domain and their DTW distances (similarity measure) to each other </br>
+
+![Signlas of Cluster 3](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/signalsCluster3.png)</br>
+![Similarity of Signals of Cluster 3](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/dtw3.png)</br>
+Figure 10. Five samples of cluster number 3 in time and frequency domain and their DTW distances (similarity measure) to each other </br>
+
+![Signlas of Cluster 4](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/signalsCluster4.png)</br>
+![Similarity of Signals of Cluster 4](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/dtw4.png)</br>
+Figure 11. Five samples of cluster number 4 in time and frequency domain and their DTW distances (similarity measure) to each other </br>
+
+![Signlas of Cluster 5](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/signalsCluster5.png)</br>
+![Similarity of Signals of Cluster 5](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/dtw5.png)</br>
+Figure 12. Five samples of cluster number 5 in time and frequency domain and their DTW distances (similarity measure) to each other </br>
+
 # Conclusion
 In this research, we manage to perform a global averaging using and accurate similarity measure. Also, regarding the computational cost, this method is proven to be significantly less time consuming. The k-means algorithm empowers us to achieve a rapid assessment.
 
