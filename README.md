@@ -6,7 +6,7 @@ There has been an ongoing  research about the Haringvlietbrug project, a 1 km lo
 It has been learned that the variability in the high frequency region is highly affected by the traffic load (operational); each vehicle passage produces a (slightly) different frequency response. In the last part of the research, a method has been proposed to cluster  the raw time signals of each traffic excitation with minimal preprocessing and leaving the samples in the time domain.</br>
 The accelerations were recorded for a continuous 15 minutes per hour. During these 15 minutes, multiple vehicles pass by. Figure 1 represents an example of a 15-minute recording.</br>
 
-![acceleration response](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/images/accelerationResponse.png)
+![acceleration response](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/accelerationResponse.png)
 Figure 1. Recording of acceleration response for 15 minutes (x-axis is time in seconds)</br>
 
 Each sample was constructed based on a triggering algorithm; once the accelerations exceed a certain threshold a trigger is activated, and a sample array of certain length is saved. These samples are used for the clustering. However, since we know how much variance we have among the different traffic loads, it is needed to distillate the samples capturing only one single vehicle passing by. A preview of 5 different (non-standardized) loadings are illustrated in Figure 2. </br>
