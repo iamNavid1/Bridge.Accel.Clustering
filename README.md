@@ -23,14 +23,32 @@ Figure 3. Euclidean Distance matching versus Dynamic Time Warping matching </br>
 
 # DBA
 DBA stands for Dynamic Time Warping Barycenter Averaging. DBA is an averaging method that is consistent with Dynamic Time Warping. Figure 4 gives an example of the difference between the traditional arithmetic mean of the set of time series and DBA. </br>
-For more info and finding underlying research and scientific papers please refere to: https://github.com/fpetitjean/DBA/blob/master/README.md </br>
+For more info and finding underlying research and scientific papers please refere to: https://github.com/fpetitjean/DBA </br>
 
 ![arithmetic mean](https://raw.githubusercontent.com/fpetitjean/DBA/master/images/arithmetic.png)</br>
 ![DBA](https://raw.githubusercontent.com/fpetitjean/DBA/master/images/DBA.png)</br>
 Figure 4. Arithmetic mean versus DTW Barycenter Averaging </br>
 
 # K-Means Clustering Algorithm
+In this research, a k-means clustering (centroid based clustering) algorithm has been implemented, where we decide upon the number of clusters upfront. Hence, in the first step, we have decided to cluster the data into five categories according what is illustrated in figure 5.</br>
+![Five Vehicle Categories](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/5categories.png)</br>
+Figure 5. Different classes of vehicles passing the bridge </br>
 
+Since performing a DBA over such large array of acceleration responses is an extensively time-consuming task with high computational cost, we decided to evaluate the accuracy of using 20% of the samples for making DBA instead of taking all the samples into account. Hence, within the first 1000 samples, 200 samples were randomly selected and used to construct the average based on DBA method. Then, the average of the dataset using whole samples was also constructed based on DBA method neglecting the computational cost. Based on the DTW analysis on the two constructed averages, it turned out that the two signals are very similar with a DTW distance as little as 1.1 which confirms their similarity, this is shown in Figure 6. Hence, we decided to take 20% of the samples to form the average as a representation of the whole dataset. </br>
+
+![Similarity measure](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/similarity.png)</br>
+Figure 6. DTW distance of the two averages constructed from the whole and 20% of the dataset </br>
+
+In the next step, the DTW distance of each sample to the reference average is evaluated. In order to validate the accuracy of the idea of using 20% of samples as the reference average instead of the whole dataset, the DTW distance of each sample was measured with respect to both averages. To prevent repetition, Figure 7 represents only the plot of DTW distance of each sample to the whole dataset although another one also exists for the 20% of the dataset.</br>
+
+![distance](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/distance.png)</br>
+Figure 7. DTW distance of each samples to the reference average (of the whole dataset) </br>
+
+Then, a k-means clustering algorithm was performed to classify these distances into 5 distinct categories. The results of this clustering are shown in Figure 8. It is clear that accuracy of the second training set (using the reference average of 20% of the dataset) in comparison to the first one (using the refence average of the whole dataset) is 94.5%, which sounds acceptable. </br>
+
+![clustering](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/clustering1.png)</br>
+![clustering](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/clustering2.png)</br>
+Figure 8. Clustering using full average (above) versus clustering using 20% average (below)</br>
 
 
 
