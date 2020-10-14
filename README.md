@@ -21,6 +21,16 @@ In time series analysis, dynamic time warping (DTW) is one of the algorithms for
 ![DTW distance](https://raw.githubusercontent.com/iamnavid1/Bridge.Accel.Clustering/main/images/DTW.png)</br>
 Figure 3. Euclidean Distance matching versus Dynamic Time Warping matching </br>
 
+# DBA
+DBA stands for Dynamic Time Warping Barycenter Averaging. DBA is an averaging method that is consistent with Dynamic Time Warping. Figure 4 gives an example of the difference between the traditional arithmetic mean of the set of time series and DBA. </br>
+For more info and finding underlying research and scientific papers please refere to: https://github.com/fpetitjean/DBA/blob/master/README.md </br>
+
+![arithmetic mean](https://raw.githubusercontent.com/fpetitjean/DBA/master/images/arithmetic.png)</br>
+![DBA](https://raw.githubusercontent.com/fpetitjean/DBA/master/images/DBA.png)</br>
+Figure 4. Arithmetic mean versus DTW Barycenter Averaging </br>
+
+# K-Means Clustering Algorithm
+
 
 
 
